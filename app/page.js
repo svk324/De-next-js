@@ -1,95 +1,58 @@
 import Image from 'next/image'
-import styles from './page.module.css'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    
+          <div>
+            
+            <div className="container">
+              <div className="card__container">
+                <article className="card__article">
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+      <Image
+      className="card__img"
+        src="/images/my-image.jpg"
+        alt="My Image"
+        width={500}
+        height={500}
+      />
+    
+                  <div className="card__data">
+                    <span className="card__description">Vancouver Mountains, Canada</span>
+                    <h2 className="card__title">The Great Path</h2>
+                    <a href="#" className="card__button">Read More</a>
+                  </div>
+                </article>
+                <article className="card__article">
+                <Image
+        className="card__img"
+        src="/images/landscape-2.png"
+        alt="My Image"
+        width={500}
+        height={500}
+      />
+                 <div className="card__data">
+                    <span className="card__description">Poon Hill, Nepal</span>
+                    <h2 className="card__title">Starry Night</h2>
+                    <a href="#" className="card__button">Read More</a>
+                  </div>
+                </article>
+                <article className="card__article">
+                <Image
+        src="/images/landscape-3.png"
+        alt="My Image"
+        className="card__img"
+        width={500}
+        height={500}
+      />
+                  <div className="card__data">
+                    <span className="card__description">Bojcin Forest, Serbia</span>
+                    <h2 className="card__title">Path Of Peace</h2>
+                    <a href="#" className="card__button">Read More</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        );
 }
